@@ -105,6 +105,11 @@ body {
     border-radius: 10px !important;
 }
 
+.publication-img {
+  width: 100%;
+  border-radius: 5px;
+}
+
 .publication-video iframe {
     position: absolute;
     top: 0;
@@ -123,15 +128,41 @@ body {
 .results-carousel .item {
   margin: 5px;
   overflow: hidden;
-  border: 1px solid #bbb;
-  border-radius: 10px;
   padding: 0;
   font-size: 0;
 }
 
+.results-carousel .item .carousel-content {
+    padding: 0px 0 12px 0;
+    /*background: #fafafa;*/
+    border-radius: 10px
+}
+
+.bullets {
+    bottom: 10px;
+    /*background-color: #0a0a0a;*/
+}
+
+.side-by-side {
+    width: 50%;
+}
+
+/*.bullets ol li {*/
+/*    border-style:solid;*/
+/*    border-width:2px;*/
+/*    border-color:#0a0a0a;*/
+/*}*/
+
+/*.bullets ol li{*/
+/*    background-color: #0a0a0a !important;*/
+/*}*/
+
 .results-carousel img {
+  border: 1px solid #bbb;
+  border-radius: 10px;
   width: 100%;
-  border-radius: 5px;
+  max-width: 4096px;
+  /*border-radius: 5px;*/
 }
 
 .results-carousel video {
