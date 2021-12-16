@@ -133,6 +133,7 @@
                   <span>arXiv</span>
                 </a>
               </span>
+
               <!-- Video Link. -->
 <!--              <span class="link-block">-->
 <!--                <a href="https://www.youtube.com/watch?v=MrKrnHhk8IA"-->
@@ -153,6 +154,30 @@
                   <span>Code</span>
                   </a>
               </span>
+
+              <!-- Colab Demo Link. -->
+              <span class="link-block">
+                <a href="http://colab.research.google.com/github/rinongal/stylegan-nada/blob/main/stylegan_nada.ipynb"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="fas fa-infinity"></i>
+                  </span>
+                  <span>Colab</span>
+                </a>
+              </span>
+              <!-- Replicate Demo Link. -->
+              <span class="link-block">
+                <a href="https://replicate.com/rinongal/stylegan-nada"
+                   class="external-link button is-normal is-rounded is-dark">
+<!--                  <span>R </span>-->
+                  <span class="icon">
+                      <i class="fas fa-play"></i>
+                  </span>
+                  <span>Demo</span>
+                </a>
+              </span>
+
+
             </div>
 
           </div>
@@ -669,6 +694,56 @@
   </div>
 </section>
 
+<section class="hero is-light is-small">
+  <div class="container is-max-desktop">
+    <div class="hero-body">
+        <!--/ Cross Model Interpolation. -->
+        <div class="section-title">
+          <h2 class="title is-3 is-centered">Cross Model Interpolation</h2>
+        </div>
+        <p>Our models and latent spaces are well aligned, so we can freely interpolate between the model weights in order to smoothly transition between domains.
+           We can even apply latent space editing at the same time, creating videos like the one below.
+        </p>
+      <br>
+      <div class="container is-max-desktop">
+        <!-- Interpolation video. -->
+        <div class="columns is-centered has-text-centered">
+          <div class="column is-four-fifths">
+              <video id="interpolation_vid" autoplay controls muted height="80%">
+               <source src="static/videos/emma_video.mp4"
+                       type="video/mp4">
+              </video>
+          </div>
+        </div>
+        <!--/ Interpolation video. -->
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container is-max-desktop">
+
+      <div class="section-title">
+        <h2 class="title is-3">Beyond StyleGAN</h2>
+      </div>
+
+      <!-- Synth video. -->
+        <div class="column is-centered">
+          <div class="column content">
+            <p>
+              Our work focused on StyleGAN, but it can just as easily be applied to other generative architectures. For example, we can take models that convert segmentation masks to images, such as <a href="https://github.com/boschresearch/OASIS/">OASIS</a>, and completely
+              replace the identity of a class - using nothing but text!
+            </p>
+            <div class="publication-img is-centered has-text-centered">
+              <img id="oasis_img" src="static/images/paper_figs/oasis.jpg"/>
+            </div>
+          </div>
+          </div>
+        </div>
+    <!--/ Synth Video. -->
+  </div>
+</section>
 
 <section class="section" id="BibTeX">
   <div class="container is-max-desktop content">
